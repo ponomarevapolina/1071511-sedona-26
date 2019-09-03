@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Pauline](https://up.htmlacademy.ru/htmlcss/26/user/1071511).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Ворожцов](https://htmlacademy.ru/profile/id485797).
 
 ---
 
