@@ -5,26 +5,26 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="index.html">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a href="index.html" class="main-header-logo">
           <img src="img/logo.svg" width="140" height="71" alt="Логотип сервиса поиска жилья 'Седона'">
         </a>
-        <ul>
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и Видео</a></li>
-          <li><a href="#">Карта Штата</a></li>
-          <li><a href="#">Гостиницы</a></li>
+        <ul class="site-navigation">
+          <li><a href="information.html">Информация</a></li>
+          <li><a href="photo.html">Фото и Видео</a></li>
+          <li><a href="map.html">Карта Штата</a></li>
+          <li><a href="hostels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section>
-        <h1>Сервис поиска жилья "Седона"</h1>
+        <h1 class="visually-hidden">Сервис поиска жилья "Седона"</h1>
         <img src="img/welcome@3x.png" width="459" height="353" alt="Welcome — to the gorgeous— Sedona Because the Grand Canyon sucks!">
       </section>
       <section>
-        <h2>Преимущества</h2>
+        <h2 class="visually-hidden">Преимущества</h2>
         <p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         <ul>
@@ -76,19 +76,39 @@
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button type="button">Поиск гостиницы в Седоне</button>
-        <!--Здесь будет форма-->
+        <form id="search-hotels" class="search-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="search-item">
+            <label for="search-check-in">Дата заезда</label>
+            <input id="search-check-in" type="text" name="check-in" value="" placeholder="24 апреля 2017">
+          </p>
+          <p class="search-item">
+            <label for="search-check-out">Дата выезда</label>
+            <input id="search-check-out" type="text" name="check-out" value="" placeholder="4 июля 2017">
+          </p>
+          <p class="search-item">
+            <label for="search-adults">Взрослые</label>
+            <input id="search-adults" type="text" name="adults" value="" placeholder="2">
+          </p>
+          <p class="search-item">
+            <label for="search-children">Дети</label>
+            <input id="search-children" type="text" name="children" value="" placeholder="0">
+          </p>
+          <p>
+            <a href="hotels.html">Найти</a>
+          </p>
+        </form>
       </section>
       <section>
-        <h2>Карта</h2>
+        <h2 class="visually-hidden">Карта</h2>
         <img src="img/map@3x.png" width="1200" height="593" alt="Карта">
       </section>
     </main>
     <footer>
       <span>#Visitsedona</span>
       <ul>
-        <li><a href="#"><img src="img/tw-icon.svg" width="17" height="15" alt="Twitter"></a>Twitter</li>
-        <li><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"></a>Facebook</li>
-        <li><a href="#"><img src="img/youtube-icon.svg" width="20" height="16" alt="Youtube"></a>Youtube</li>
+        <li><a href="https://twitter.com/"><img src="img/tw-icon.svg" width="17" height="15" alt="Twitter"></a>Twitter</li>
+        <li><a href="https://www.facebook.com/"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"></a>Facebook</li>
+        <li><a href="https://www.youtube.com/"><img src="img/youtube-icon.svg" width="20" height="16" alt="Youtube"></a>Youtube</li>
       </ul>
       <p>Website by</p>
       <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmla.svg" width="115" height="41" alt="Лого HTML Academy">HTML Academy</a>
