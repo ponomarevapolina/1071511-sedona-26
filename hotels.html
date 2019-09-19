@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
   </head>
   <body>
     <header class="main-header">
@@ -27,7 +31,7 @@
           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
             <fieldset>
               <legend>Инфраструктура:</legend>
-              <ul>
+              <ul class="infrastructure">
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="swimmingPool" checked id="swimmingPool">
                   <label for="swimmingPool">Бассейн</label>
@@ -44,7 +48,7 @@
             </fieldset>
             <fieldset>
               <legend>Тип жилья:</legend>
-              <ul>
+              <ul class="types">
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="hotel" checked>
                   <label for="hotel">Гостиница</label>
@@ -72,7 +76,7 @@
     <section>
       <h2>Сортировка:</h2>
       <p>Найдено: <span>3</span></p>
-      <ul>
+      <ul class="sort">
         <li><a href="#">По цене</a></li>
         <li><a href="#">По типу</a></li>
         <li><a href="#">По рейтингу</a></li>
@@ -81,7 +85,7 @@
     <main>
       <section>
         <h2 class="visually-hidden">Каталог гостиниц</h2>
-        <ul>
+        <ul class="hotels-items">
           <li>
             <a href="catalog-item.html">
               <h3>
@@ -94,8 +98,8 @@
               <p class="catalog-category">Гостиница</p>
               <p class="catalog-price">От 4000 Р.</p>
               <p class="catalog-score">Рейтинг: 8,5</p>
-            <a class="button" href="#">Подробнее</a>
-            <a class="button" href="#">Забронировать</a>
+            <a class="more" href="#">Подробнее</a>
+            <a class="book" href="#">Забронировать</a>
           </li>
           <li>
             <a href="catalog-item.html">
@@ -109,8 +113,8 @@
             <p class="catalog-category">Мотель</p>
             <p class="catalog-price">От 3000 Р.</p>
             <p class="catalog-score">Рейтинг: 8,9</p>
-            <a class="button" href="#">Подробнее</a>
-            <a class="button" href="#">Забронировать</a>
+            <a class="more" href="#">Подробнее</a>
+            <a class="book" href="#">Забронировать</a>
           </li>
           <li>
             <a href="catalog-item.html">
@@ -124,36 +128,36 @@
             <p class="catalog-category">Апартаменты</p>
             <p class="catalog-price">От 2000 Р.</p>
             <p class="catalog-score">Рейтинг: 9,2</p>
-            <a class="button" href="#">Подробнее</a>
-            <a class="button" href="#">Забронировать</a>
+            <a class="more" href="#">Подробнее</a>
+            <a class="book" href="#">Забронировать</a>
           </li>
         </ul>
       </section>
     </main>
     <footer>
-      <span>#Visitsedona</span>
-      <ul>
-        <li>
-          <a href="https://twitter.com/">
-            <img src="img/tw-icon.svg" width="17" height="15" alt="Twitter">
-            <span class="visually-hidden">Twitter</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/">
-            <img src="img/fb-icon.svg" width="12" height="22" alt="Facebook">
-            <span class="visually-hidden">Facebook</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/">
-            <img src="img/youtube-icon.svg" width="20" height="16" alt="Youtube">
-            <span class="visually-hidden">Youtube</span>
-          </a>
-        </li>
-      </ul>
-      <p>Website by</p>
-      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmla.svg" width="115" height="41" alt="Лого HTML Academy">HTML Academy</a>
-    </footer>
+        <span class="visitsedona">#Visitsedona</span>
+        <ul class="social-networks">
+          <li>
+            <a href="https://twitter.com/">
+              <img src="img/tw-icon.svg" width="17" height="15" alt="Twitter">
+            </a>
+            Twitter
+          </li>
+          <li>
+            <a href="https://www.facebook.com/">
+              <img src="img/fb-icon.svg" width="12" height="22" alt="Facebook">
+            </a>
+            Facebook
+          </li>
+          <li>
+            <a href="https://www.youtube.com/">
+              <img src="img/youtube-icon.svg" width="20" height="16" alt="Youtube">
+            </a>
+            Youtube
+          </li>
+        </ul>
+        <p class="website">Website by</p>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmla.svg" width="115" height="41" alt="Лого HTML Academy">HTML Academy</a>
+      </footer>
   </body>
 </html>
