@@ -10,18 +10,20 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
-        <a href="index.html" class="main-header-logo">
-          <img src="img/logo.svg" width="140" height="71" alt="Логотип сервиса поиска жилья 'Седона'">
-        </a>
-        <ul class="site-navigation">
-          <li><a href="information.html">Информация</a></li>
-          <li><a href="photo.html">Фото и Видео</a></li>
-          <li><a href="map.html">Карта Штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
-        </ul>
-      </nav>
-    </header>
+        <nav class="main-navigation">
+          <ul class="site-navigation">
+            <li><a href="information.html">Информация</a></li>
+            <li><a href="photo.html">Фото и Видео</a></li>
+            <li>
+              <a href="index.html" class="main-header-logo">
+                <img src="img/logo.svg" width="140" height="71" alt="Логотип сервиса поиска жилья 'Седона'">
+              </a>
+            </li>
+            <li><a href="map.html">Карта Штата</a></li>
+            <li><a href="hotels.html">Гостиницы</a></li>
+          </ul>
+        </nav>
+      </header>
     <section class="filters">
       <h1 class="visually-hidden">Гостиницы</h1>
       <div>
@@ -86,7 +88,7 @@
       <section>
         <h2 class="visually-hidden">Каталог гостиниц</h2>
         <ul class="hotels-items">
-          <li>
+          <li сlass="hotel-item">
             <a href="catalog-item.html">
               <h3>
                 <span class="catalog-item-title">Amara Resort & SPA</span>
@@ -95,13 +97,13 @@
                 <img src="img/hotel-picture@3x-1.jpg" width="135" height="90" alt="Amara Resort & SPA">
               </p>
             </a>
-              <p class="catalog-category">Гостиница</p>
-              <p class="catalog-price">От 4000 Р.</p>
-              <p class="catalog-score">Рейтинг: 8,5</p>
+            <p class="catalog-category">Гостиница</p>
+            <p class="catalog-price">От 4000 Р.</p>
+            <p class="catalog-score">Рейтинг: 8,5</p>
             <a class="more" href="#">Подробнее</a>
             <a class="book" href="#">Забронировать</a>
           </li>
-          <li>
+          <li сlass="hotel-item">
             <a href="catalog-item.html">
               <h3>
                 <span class="catalog-item-title">Desert Quail Inn</span>
@@ -116,7 +118,7 @@
             <a class="more" href="#">Подробнее</a>
             <a class="book" href="#">Забронировать</a>
           </li>
-          <li>
+          <li сlass="hotel-item">
             <a href="catalog-item.html">
               <h3>
                 <span class="catalog-item-title">Villas At Poco Diablo</span>
@@ -134,7 +136,7 @@
         </ul>
       </section>
     </main>
-    <footer>
+    <footer class="main-footer">
         <span class="visitsedona">#Visitsedona</span>
         <ul class="social-networks">
           <li>
