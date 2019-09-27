@@ -11,15 +11,23 @@
     <header class="main-header">
       <nav class="main-navigation">
         <ul class="site-navigation">
-          <li><a href="information.html">Информация</a></li>
-          <li><a href="photo.html">Фото и Видео</a></li>
+          <li>
+            <a href="information.html">Информация</a>
+          </li>
+          <li>
+            <a href="photo.html">Фото и Видео</a>
+          </li>
           <li>
             <a href="index.html" class="main-header-logo">
               <img src="img/logo.svg" width="140" height="71" alt="Логотип сервиса поиска жилья 'Седона'">
             </a>
           </li>
-          <li><a href="map.html">Карта Штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+          <li>
+            <a href="map.html">Карта Штата</a
+          ></li>
+          <li>
+            <a href="hotels.html">Гостиницы</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -38,48 +46,52 @@
         <ul class="advantages">
           <li>
             <div class="true-city">
-              <h3>Настоящий <br> городок</h3>
-              <p>-№1-</p>
-              <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+              <div class="true-city-block">
+                <h3>Настоящий <br> городок</h3>
+                <p>-№1-</p>
+                <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
             </div>
             <ul class="city">
-              <li>
-                <h4>Жильё</h4>
-                <img src="img/icon-1.svg" width="75" height="72" alt="Жильё">
+              <li class="city-block">
+                <h4 class="accommodation-block">Жильё</h4>
+                <img src="img/icon-1.svg" width="75" height="72" alt="Жильё" class="accommodation">
                 <p>Рекомендуем пожить в настоящем <br> мотеле, всё как в кино!</p>
               </li> 
-              <li>
-                <h4>Еда</h4>
-                <img src="img/icon-3.svg" width="74" height="70" alt="Еда">
+              <li class="city-block">
+                <h4 class="food-block">Еда</h4>
+                <img src="img/icon-3.svg" width="74" height="70" alt="Еда" class="food">
                 <p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
               </li> 
-              <li>
-                <h4>Сувениры</h4>
-                <img src="img/icon-2.svg" width="64" height="76" alt="Сувениры">
+              <li class="city-block">
+                <h4 class="souvenirs-block">Сувениры</h4>
+                <img src="img/icon-2.svg" width="64" height="76" alt="Сувениры" class="souvenirs">
                 <p>Не только китайского, но и местного<br> производства</p>
               </li>
             </ul>
           </li>  
           <li>
             <div class="bridge"> 
-              <h3>Там есть мост дьявола</h3>
-              <p>-№2-</p>
-              <p>Да, по нему можно пройти! Если конечно <br>вы осмелитесь</p>
+              <div class="bridge-block">
+                <h3>Там есть мост дьявола</h3>
+                <p>-№2-</p>
+                <p>Да, по нему можно пройти! Если конечно <br>вы осмелитесь</p>
+              </div> 
             </div>
           </li>
           <div class="other-advantages">
             <li>
-              <h3>Небольшая площадь</h3>
+              <h3>Небольшая<br> площадь</h3>
               <p>-№3-</p>
               <p>Все достопримечательности<br> находятся очень близко</p>
             </li>
             <li>
-              <h3>Красивая дорога</h3>
+              <h3>Красивая<br> дорога</h3>
               <p>-№4-</p>
               <p>Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
             </li>
             <li>
-              <h3>Мало туристов</h3>
+              <h3>Мало<br> туристов</h3>
               <p>-№5-</p>
               <p>Большинство едет в Гранд Каньон<br> и толпится там</p>
             </li> 
@@ -114,33 +126,42 @@
       </section>
       <section>
         <h2 class="visually-hidden">Карта</h2>
-        <img src="img/map@3x.png" width="1200" height="593" alt="Карта">
+        <img src="img/map@3x.png" width="1200" height="593" alt="Карта" class="map">
       </section>
     </main>
     <footer class="main-footer">
       <span class="visitsedona">#Visitsedona</span>
       <ul class="social-networks">
         <li>
-          <a href="https://twitter.com/">
-            <img src="img/tw-icon.svg" width="17" height="15" alt="Twitter">
-          </a>
-          <span class="visually-hidden">Twitter</span>
+          <div class="twitter">
+            <a href="https://twitter.com/">
+              <img src="img/tw-icon.svg" alt="Twitter" width="17" height="15">
+            </a>
+            <span class="visually-hidden">Twitter</span>
+          </div>
         </li>
         <li>
-          <a href="https://www.facebook.com/">
-            <img src="img/fb-icon.svg" width="12" height="22" alt="Facebook">
-          </a>
+          <div class="facebook">
+           <a href="https://www.facebook.com/">
+              <img src="img/fb-icon.svg" alt="Facebook" width="12" height="22">
+            </a>
           <span class="visually-hidden">Facebook</span>
+          </div>
         </li>
         <li>
-          <a href="https://www.youtube.com/">
-            <img src="img/youtube-icon.svg" width="20" height="16" alt="Youtube">
-          </a>
-          <span class="visually-hidden">Youtube</span>
+          <div class="youtube">
+            <a href="https://www.youtube.com/">
+              <img src="img/youtube-icon.svg" alt="Youtube" width="20" height="16">
+            </a>
+            <span class="visually-hidden">Youtube</span>
+          </div>
         </li>
       </ul>
       <p class="website">Website by</p>
-      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmla.svg" width="115" height="41" alt="Лого HTML Academy">HTML Academy</a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/logo-htmla.svg" width="115" height="41" alt="Лого HTML Academy">
+        <span class="visually-hidden">HTML Academy</span>
+      </a>
     </footer>
   </body>
 </html>
